@@ -10,7 +10,7 @@ first_serve = True
 
 # order a window from the tkinter window factory
 window = Tk()
-window.title("MyPong")
+window.title("Pingpongsp19")
        
 # order a table from the table class
 my_table = table.Table(window, net_colour="blue", vertical_net=True)
@@ -38,7 +38,7 @@ def game_flow():
     bat_L.detect_collision(my_ball)
     bat_R.detect_collision(my_ball)
 
-    # detect if the ball has hit the left wall:
+    # If ball hit the left wall:
     if(my_ball.x_posn <= 3):
         my_ball.stop_ball()
         my_ball.start_position()
