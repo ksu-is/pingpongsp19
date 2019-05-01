@@ -1,6 +1,8 @@
 from tkinter import *
 import table, ball, bat
 
+ tkinter.Tcl().eval('info patchlevel')
+
 # initialise global variables
 x_velocity = 10
 y_velocity = 0
